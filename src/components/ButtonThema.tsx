@@ -1,15 +1,15 @@
 "use client";
+import Button from "./Button";
 import { useTheme } from "./ThemeProvider";
 
-export function ButtonThema() {
+export default function ThemeToggle() {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <button
+    <Button
       onClick={toggleTheme}
-      className="p-2 m-4 border rounded bg-amber-400"
-    >
-      {isDark ? "Tema Claro" : "Tema Escuro"}
-    </button>
+      text={isDark ? "Modo Claro" : "Modo Escuro"}
+      className="px-4 py-2 bg-accent text-white rounded-md"
+    />
   );
 }

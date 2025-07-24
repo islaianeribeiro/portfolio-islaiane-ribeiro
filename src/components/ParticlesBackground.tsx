@@ -53,7 +53,7 @@ export const ParticlesBackground = () => {
         },
         move: {
           enable: true,
-          speed: 0.6,
+          speed: 0.5,
         },
         links: {
           enable: true,

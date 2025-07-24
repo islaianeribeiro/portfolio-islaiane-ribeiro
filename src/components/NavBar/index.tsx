@@ -5,7 +5,6 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@/components/Button";
 import ClientNavBar from "./ClientNavBar";
-import { useTheme } from "../ThemeProvider";
 
 const menuItems = [
   { url: "#home", label: "Início" },
@@ -18,7 +17,6 @@ const menuItems = [
 export default function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const { isDark } = useTheme();
 
   const handleMenuToggle = useCallback(() => {
     setOpenMenu((prev) => !prev);
@@ -26,15 +24,15 @@ export default function NavBar() {
 
   return (
     <header>
-      <div className="flex items-center justify-around md:justify-evenly w-full h-24 fixed top-0 bg-accent z-[999]">
+      <div className="flex items-center justify-around md:justify-evenly w-full h-17 fixed top-0 bg-accent z-[999]">
         <div className="flex">
           <a href="/" className="no-underline">
-            <p className="text-3xl text-white">Islaiane Ribeiro</p>
+            <p className="text-xl text-white">Islaiane Ribeiro</p>
           </a>
         </div>
 
         <Button
-          className="block text-3xl w-8 md:hidden text-light cursor-pointer"
+          className="block text-xl w-8 md:hidden text-light cursor-pointer"
           onClick={handleMenuToggle}
           ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
           icon={<FontAwesomeIcon icon={openMenu ? faXmark : faBars} />}

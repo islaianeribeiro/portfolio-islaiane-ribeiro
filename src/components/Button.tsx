@@ -26,7 +26,12 @@ const Button = ({
 
   if (href) {
     return (
-      <a href={href} className={className} aria-label={ariaLabel}>
+      <a
+        href={href}
+        target="_blank"
+        className={className}
+        aria-label={ariaLabel}
+      >
         {content}
       </a>
     );

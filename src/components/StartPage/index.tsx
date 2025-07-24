@@ -1,66 +1,52 @@
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
+import SocialLinks from "../SocialLinks";
+import Button from "../Button";
 
 export default function StartPage() {
   return (
-    <section className="h-[100vh] py-18 px-[5%] items-center">
-      <div className="w-full">
-        <div className="flex items-center justify-evenly gap-0 h-full">
-          <div className="home__txt">
-            <h1>Muito prazer, me chamo</h1>
-            <h2>Islaiane Ribeiro</h2>
-            <p>
-              Desenvolvedora <span>Front-End</span>
+    <div className="w-full">
+      <div className="flex items-center justify-evenly gap-0 h-full dark:text-light ">
+        <div className="flex flex-col text-center w-full lg:w-[40%]">
+          <h1 className="text-xl uppercase lg:text-start">
+            Muito prazer, me chamo
+          </h1>
+          <h2 className="text-xl font-bold mb-1.5 uppercase lg:text-start text-accent">
+            Islaiane Ribeiro
+          </h2>
+          <p className="text-lg font-normal lg:text-end">
+            Desenvolvedora
+            <span className="text-accent font-bold"> Front-End</span>
+          </p>
+
+          <div className="mt-25">
+            <p className="text-center text-[16px] md:text-lg">
+              Transformando ideias em sites bonitos, rápidos e responsivos com
+              muito café e código!
             </p>
-
-            <div className="text">
-              <p>
-                Transformando ideias em sites bonitos, rápidos e responsivos com
-                muito café e código!
-              </p>
-            </div>
-
-            <div className="btn">
-              <Link
-                href="https://www.instagram.com/_islaianeribeiro/#"
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/islaianeribeiro"
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
-              <Link href="https://github.com/islaianeribeiro" target="_blank">
-                <FontAwesomeIcon icon={faGithub} />
-              </Link>
-            </div>
-
-            <div className="btn">
-              <p>Currículo</p>
-            </div>
           </div>
 
-          <div className="home__img">
-            <Image
-              src="/perfil.png"
-              alt="Descrição da imagem"
-              width={500}
-              height={300}
-              priority // carrega mais rápido (opcional)
-              className="rounded-lg"
+          <SocialLinks />
+
+          <div className="btn">
+            <Button
+              href="/cv/Curriculo-Islaiane-Ribeiro-2025.pdf"
+              text="Currículo"
+              className="inline-flex px-3 py-3 m-0.5 text-sm font-semibold bg-accent text-light border-0 rounded-md cursor-pointer no-underline transition duration-200 hover:shadow-[0_0_0.8rem_#4b7c84] hover:-translate-y-1"
             />
           </div>
         </div>
+
+        <div className="hidden lg:block">
+          <Image
+            src="/images/perfil.png"
+            alt="Descrição da imagem"
+            width={250}
+            height={250}
+            priority // carrega mais rápido (opcional)
+            className="w-90 h-90 object-contain bg-[#4b7c84] shadow-[0_0_0.8rem_#f4f4f4] rounded-full transition duration-200 hover:-translate-y-4 hover:shadow-[0_0_0.8rem_#4b7c84]"
+          />
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
