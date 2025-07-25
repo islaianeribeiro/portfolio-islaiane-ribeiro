@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+const paragrafos = [
+  "Olá! Me chamo Islaiane Ribeiro e sou Desenvolvedora Front-End, apaixonada por transformar ideias em interfaces interativas, acessíveis e de alto desempenho. Busco sempre criar experiências intuitivas e eficientes, combinando tecnologia e design. Tenho conhecimento em JavaScript, TypeScript, React.js, Next.js, HTML, CSS, TailwindCSS. Sou graduanda em Análise e Desenvolvimento de Sistemas (Unopar - conclusão em jun/2025).",
+  "Desenvolvo projetos pessoais e acadêmicos aplicando boas práticas como componentização, responsividade e otimização de performance. Também fui selecionada para a fase avançada do Bootcamp Skill+ Santander Open Academy, onde venho aprimorando conhecimentos em Python, DataViz, Inteligência Artificial Generativa e Data Storytelling, além de participar de mentorias e simulações de entrevistas técnicas.",
+  "Possuo habilidades em comunicação, resolução de problemas, auto-organização e aprendizado contínuo, adaptando-me rapidamente a novas tecnologias e desafios. Estou em busca da minha primeira oportunidade como desenvolvedora júnior! Caso tenha interesse em colaborar ou trocar experiências, fique à vontade para entrar em contato!",
+];
+
 export default function About() {
   return (
     <div className="px-2.5 h-full">
@@ -18,33 +24,12 @@ export default function About() {
             MUITO PRAZER,{" "}
             <span className="text-accent block">SOU ISLAIANE RIBEIRO.</span>
           </h2>
-          <p className="my-5 mx-0 text-base text-justify">
-            Olá! Me chamo Islaiane Ribeiro e sou Desenvolvedora Front-End,
-            apaixonada por transformar ideias em interfaces interativas,
-            acessíveis e de alto desempenho. Busco sempre criar experiências
-            intuitivas e eficientes, combinando tecnologia e design. Tenho
-            conhecimento em JavaScript, TypeScript, React.js, Next.js, HTML,
-            CSS, TailwindCSS. Sou graduanda em Análise e Desenvolvimento de
-            Sistemas (Unopar - conclusão em jun/2025).
-          </p>
 
-          <p className="my-5 mx-0 text-base text-justify">
-            Desenvolvo projetos pessoais e acadêmicos aplicando boas práticas
-            como componentização, responsividade e otimização de performance.
-            Também fui selecionada para a fase avançada do Bootcamp Skill+
-            Santander Open Academy, onde venho aprimorando conhecimentos em
-            Python, DataViz, Inteligência Artificial Generativa e Data
-            Storytelling, além de participar de mentorias e simulações de
-            entrevistas técnicas.
-          </p>
-          <p className="my-5 mx-0 text-base text-justify">
-            Possuo habilidades em comunicação, resolução de problemas,
-            auto-organização e aprendizado contínuo, adaptando-me rapidamente a
-            novas tecnologias e desafios. Estou em busca da minha primeira
-            oportunidade como desenvolvedora júnior! Caso tenha interesse em
-            colaborar ou trocar experiências, fique à vontade para entrar em
-            contato!
-          </p>
+          {paragrafos.map((texto, index) => (
+            <p key={index} className="my-5 mx-0 text-base text-justify">
+              {texto}
+            </p>
+          ))}
         </div>
       </div>
     </div>
