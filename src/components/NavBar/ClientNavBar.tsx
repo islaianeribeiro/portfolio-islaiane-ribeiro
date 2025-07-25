@@ -1,4 +1,4 @@
-import { useTheme } from "../ThemeProvider";
+import { useTheme } from "../../contexts/ThemeProvider";
 
 type MenuItem = {
   url: string;
@@ -35,7 +35,7 @@ export default function ClientNavBar({
             <a
               href={item.url}
               onClick={() => setActiveIndex(index)}
-              className={`no-underline font-medium text-[16px] block
+              className={`no-underline font-medium text-base block
                 ${
                   activeIndex === index
                     ? "border-b md:border-light border-accent"

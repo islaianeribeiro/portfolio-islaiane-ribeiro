@@ -6,7 +6,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-full text-dark dark:text-light">
         <div>
           <Image
-            className="w-50 h-50 md:w-90 md:h-90 object-contain rounded-full"
+            className="w-70 h-70 md:w-90 md:h-90 object-contain rounded-full"
             src="/images/avatar.png"
             alt="Descrição da imagem"
             width={300}

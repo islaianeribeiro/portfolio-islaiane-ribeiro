@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
-import { useTheme } from "./ThemeProvider";
+import { useTheme } from "../../contexts/ThemeProvider";
 
 export const ParticlesBackground = () => {
   const [init, setInit] = useState(false);

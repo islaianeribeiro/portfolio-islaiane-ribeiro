@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "@/components/Button";
+import Button from "@/components/ui/Button";
 import ClientNavBar from "./ClientNavBar";
 
 const menuItems = [
@@ -24,7 +24,7 @@ export default function NavBar() {
 
   return (
     <header>
-      <div className="flex items-center justify-around md:justify-evenly w-full h-17 fixed top-0 bg-accent z-[999]">
+      <div className="flex items-center justify-around md:justify-evenly w-full h-17 fixed top-0 bg-accent z-[10]">
         <div className="flex">
           <a href="/" className="no-underline">
             <p className="text-xl text-white">Islaiane Ribeiro</p>

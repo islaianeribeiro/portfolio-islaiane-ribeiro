@@ -1,11 +1,11 @@
 // app/page.tsx
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { ParticlesBackground } from "@/components/ParticlesBackground";
-import NavBar from "@/components/NavBar";
-import ThemeToggle from "@/components/ButtonThema";
-import StartPage from "@/components/StartPage";
-import Section from "@/components/Section";
-import About from "@/components/About";
+import { ThemeProvider } from "@/contexts/ThemeProvider";
+import { ParticlesBackground } from "@/components/common";
+import NavBar from "@/components/navbar";
+import ThemeToggle from "@/components/ui/ThemeToggle";
+import StartPage from "@/components/startpage";
+import Section from "@/components/layout/Section";
+import About from "@/components/about";
 
 export default function Home() {
   return (
