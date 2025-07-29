@@ -1,15 +1,15 @@
 // app/page.tsx
-import { ThemeProvider } from "@/contexts/ThemeProvider";
 import { ParticlesBackground } from "@/components/common";
 import NavBar from "@/components/navbar";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import StartPage from "@/components/startpage";
 import Section from "@/components/layout/Section";
 import About from "@/components/about";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <ThemeProvider>
+    <>
       <ParticlesBackground />
       <NavBar />
 
@@ -23,14 +23,19 @@ export default function Home() {
 
         <Section
           id="about"
-          className="h-auto items-start
- pt-24 px-[5%] pb-16 md:py-28 md:px-[5%] md:h-screen flex md:items-center justify-center scroll-mt-8"
+          className="h-auto items-start pt-24 px-[5%] pb-16 md:py-28 md:px-[5%] md:h-screen flex md:items-center justify-center scroll-mt-8"
         >
           <About />
         </Section>
 
-        <ThemeToggle />
+        <Section
+          id="projects"
+          className="h-auto items-start pt-24 px-[5%] pb-16 md:py-28 md:px-[5%] md:h-screen flex md:items-center justify-center scroll-mt-8"
+        >
+          <Projects />
+        </Section>
       </main>
-    </ThemeProvider>
+      <ThemeToggle />
+    </>
   );
 }

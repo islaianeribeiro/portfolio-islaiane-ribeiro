@@ -32,7 +32,7 @@ export default function NavBar() {
         </div>
 
         <Button
-          className="block text-xl w-8 md:hidden text-light cursor-pointer"
+          className="block text-xl w-4 md:hidden text-light cursor-pointer"
           onClick={handleMenuToggle}
           ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
           icon={<FontAwesomeIcon icon={openMenu ? faXmark : faBars} />}
