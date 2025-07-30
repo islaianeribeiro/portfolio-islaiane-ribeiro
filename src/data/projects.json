@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "nome": "APROARTI - Site Institucional",
     "capa": "/images/aproarti/aproarti.png",
     "descricaoCurta": "Aplicação web para valorizar o artesanato de Icó - CE, inspirada na associação APROARTI. Desenvolvida com React.js, Next.js, TypeScript e Tailwind CSS, conta com seções como Home, Sobre, Produtos e Contato, unindo design artesanal e navegação acessível.",
@@ -17,7 +17,8 @@
       "Design: Paleta terrosa e tipografia sem serifa para transmitir autenticidade."
     ],
     "conclusao": "Esse projeto foi uma excelente oportunidade de aplicar conhecimentos técnicos em um contexto real e contribuir com uma iniciativa cultural de grande impacto. Pretendo expandi-lo com funcionalidades como login de artesãos e integração com APIs.",
-    "imagensExtras": [
+    "imagens": [
+      "/images/aproarti/aproarti.png",
       "/images/aproarti/aproarti2.png",
       "/images/aproarti/aproarti3.png",
       "/images/aproarti/aproarti4.png"
@@ -26,7 +27,7 @@
   },
 
   {
-    "id": 2,
+    "id": "2",
     "nome": "Weather Forecast",
     "capa": "/images/tempo/tempo.png",
     "descricaoCurta": "Aplicação web de previsão do tempo com dados da OpenWeather API. Desenvolvida com HTML, CSS e JavaScript (via Vite), possui interface responsiva, campo de busca por cidade, clima atual e previsão dos próximos dias com mensagens dinâmicas.",
@@ -44,7 +45,8 @@
       "Design: Ícones Font Awesome, fontes Poppins e imagens SVG para alertas visuais."
     ],
     "conclusao": "Esse projeto foi uma excelente oportunidade para praticar o consumo de APIs, aplicar boas práticas de organização modular e melhorar a experiência do usuário com uma interface leve e funcional.",
-    "imagensExtras": [
+    "imagens": [
+      "/images/tempo/tempo.png",
       "/images/tempo/tempo2.png",
       "/images/tempo/tempo3.png",
       "/images/tempo/tempo4.png",
@@ -54,7 +56,7 @@
   },
 
   {
-    "id": 3,
+    "id": "3",
     "nome": "Pizzaria - Landing page",
     "capa": "/images/pizzaria/pizzaria.png",
     "descricaoCurta": "Landing page moderna e responsiva para uma pizzaria fictícia, desenvolvida com Next.js, React.js e Tailwind CSS. Destaques para cardápio dinâmico via JSON, depoimentos interativos e foco em performance e UX.",
@@ -71,7 +73,8 @@
       "UI/UX: FontAwesome, layout limpo e atrativo."
     ],
     "conclusao": "Esse projeto foi uma ótima oportunidade para consolidar meus conhecimentos em Next.js e Tailwind, além de praticar conceitos de componentização e usabilidade. Pretendo expandi-lo com novas funcionalidades, como integração com API para pedidos online e animações com Framer Motion.",
-    "imagensExtras": [
+    "imagens": [
+      "/images/pizzaria/pizzaria.png",
       "/images/pizzaria/pizzaria2.png",
       "/images/pizzaria/pizzaria3.png"
     ],
@@ -79,7 +82,7 @@
   },
 
   {
-    "id": 4,
+    "id": "4",
     "nome": "Clone do Spotify",
     "capa": "/images/spotify/spotify.png",
     "descricaoCurta": "Aplicação web de streaming de música inspirada no Spotify, com player funcional, rotas dinâmicas e consumo de API. Desenvolvida com React.js, Vite, Node.js, Express e MongoDB, unindo frontend moderno e backend estruturado.",
@@ -97,7 +100,8 @@
       "Integração: Comunicação eficiente entre as camadas com Axios."
     ],
     "conclusao": "Esse projeto foi essencial para desenvolver minhas habilidades em aplicações Full Stack, combinando lógica de backend com uma interface moderna. Pretendo continuar evoluindo a aplicação com novas funcionalidades e melhorias na experiência do usuário.",
-    "imagensExtras": [
+    "imagens": [
+      "/images/spotify/spotify.png",
       "/images/spotify/spotify2.png",
       "/images/spotify/spotify3.png",
       "/images/spotify/spotify4.png"
@@ -106,7 +110,7 @@
   },
 
   {
-    "id": 5,
+    "id": "5",
     "nome": "Lista de Tarefas",
     "capa": "/images/lista/lista.png",
     "descricaoCurta": "Aplicação web de gerenciamento de tarefas com foco em manipulação do DOM e persistência de dados via localStorage. Desenvolvida com HTML, CSS e JavaScript, permite adicionar, concluir e excluir tarefas com feedback visual.",
@@ -124,7 +128,11 @@
       "HTML e CSS: Estrutura semântica e responsiva, com um visual simples com foco na funcionalidade."
     ],
     "conclusao": "Este projeto foi uma excelente oportunidade para consolidar fundamentos de JavaScript, lógica de programação e boas práticas em aplicações front-end sem uso de frameworks.",
-    "imagensExtras": ["/images/lista/lista2.png", "/images/lista/lista3.png"],
+    "imagens": [
+      "/images/lista/lista.png",
+      "/images/lista/lista2.png",
+      "/images/lista/lista3.png"
+    ],
     "linkRepositorio": "https://github.com/islaianeribeiro/todo-list"
   }
 ]

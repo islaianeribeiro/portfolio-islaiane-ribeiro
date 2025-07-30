@@ -4,6 +4,7 @@ type ButtonProps = {
   text?: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   className?: string;
+  target?: string;
   icon?: ReactNode;
   href?: string;
   ariaLabel?: string;
@@ -13,6 +14,7 @@ const Button = ({
   text,
   onClick,
   className,
+  target,
   icon,
   href,
   ariaLabel,
@@ -28,7 +30,7 @@ const Button = ({
     return (
       <a
         href={href}
-        target="_blank"
+        target={target}
         className={className}
         aria-label={ariaLabel}
       >

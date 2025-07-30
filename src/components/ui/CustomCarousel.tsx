@@ -20,6 +20,7 @@ interface CustomCarouselProps {
   children: ReactNode[];
   slidesPerView?: number;
   breakpoints?: SwiperOptions["breakpoints"];
+  title?: string | ReactNode;
 }
 
 const CustomCarousel = ({
@@ -29,20 +30,30 @@ const CustomCarousel = ({
     768: { slidesPerView: 2 },
     1024: { slidesPerView: 3 },
   },
+  title,
 }: CustomCarouselProps) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
     <div className="relative w-full">
-      <h2 className="text-3xl uppercase text-center text-dark dark:text-light mb-6">
-        Meus <span className="text-accent">projetos</span>
-      </h2>
-      {/* Navegação personalizada */}
+      {title && (
+        <h2 className="text-3xl uppercase text-center text-dark dark:text-light mb-6">
+          {typeof title === "string" ? (
+            <>
+              {title.split(" ").slice(0, -1).join(" ")}{" "}
+              <span className="text-accent">{title.split(" ").slice(-1)}</span>
+            </>
+          ) : (
+            title
+          )}
+        </h2>
+      )}
+
       <div className="absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <button
           ref={prevRef}
-          className="text-dark dark:text-light hover:scale-105 text-2xl"
+          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
         >
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
@@ -50,7 +61,7 @@ const CustomCarousel = ({
       <div className="absolute top-1/2 -translate-y-1/2 right-0 z-10">
         <button
           ref={nextRef}
-          className="text-dark dark:text-light hover:scale-105 text-2xl"
+          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
@@ -76,7 +87,7 @@ const CustomCarousel = ({
           }
         }}
         breakpoints={breakpoints}
-        className="!pb-10"
+        className="!pb-6.5"
       >
         {children.map((child, index) => (
           <SwiperSlide key={index}>{child}</SwiperSlide>

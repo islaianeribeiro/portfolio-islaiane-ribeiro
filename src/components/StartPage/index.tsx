@@ -32,6 +32,7 @@ export default function StartPage() {
               href="/cv/Curriculo-Islaiane-Ribeiro-2025.pdf"
               text="Currículo"
               className="inline-flex px-3 py-3 m-0.5 text-sm font-semibold bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:-translate-y-1 hover:shadow-[0_0_0.8rem_#4b7c84]"
+              target="_blank"
             />
           </div>
         </div>

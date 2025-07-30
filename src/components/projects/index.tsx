@@ -4,7 +4,14 @@ import projects from "@/data/projects.json";
 
 export default function ProjectsSection() {
   return (
-    <CustomCarousel>
+    <CustomCarousel
+      title="Meus projetos"
+      slidesPerView={1}
+      breakpoints={{
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }}
+    >
       {projects.map((item, i) => (
         <ProjectCard key={i} project={item} />
       ))}

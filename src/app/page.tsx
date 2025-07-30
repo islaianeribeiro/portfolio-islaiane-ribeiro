@@ -23,14 +23,14 @@ export default function Home() {
 
         <Section
           id="about"
-          className="h-auto items-start pt-24 px-[5%] pb-16 md:py-28 md:px-[5%] md:h-screen flex md:items-center justify-center scroll-mt-8"
+          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
         >
           <About />
         </Section>
 
         <Section
           id="projects"
-          className="h-auto items-start pt-24 px-[5%] pb-16 md:py-28 md:px-[5%] md:h-screen flex md:items-center justify-center scroll-mt-8"
+          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
         >
           <Projects />
         </Section>
