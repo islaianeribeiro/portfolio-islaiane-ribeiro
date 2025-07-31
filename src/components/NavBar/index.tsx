@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import Button from "@/components/ui/Button";
 import ClientNavBar from "./ClientNavBar";
+import Link from "next/link";
 
 const menuItems = [
   { url: "#home", label: "Início" },
@@ -26,16 +26,16 @@ export default function NavBar() {
     <header>
       <div className="flex items-center justify-around md:justify-evenly w-full h-17 fixed top-0 bg-accent z-[10]">
         <div className="flex">
-          <a href="/" className="no-underline">
+          <Link href="/" className="no-underline">
             <p className="text-xl text-white">Islaiane Ribeiro</p>
-          </a>
+          </Link>
         </div>
 
         <Button
           className="block text-xl w-4 md:hidden text-light cursor-pointer"
           onClick={handleMenuToggle}
           ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
-          icon={<FontAwesomeIcon icon={openMenu ? faXmark : faBars} />}
+          icon={openMenu ? <FaXmark /> : <FaBarsStaggered />}
         />
 
         <ClientNavBar

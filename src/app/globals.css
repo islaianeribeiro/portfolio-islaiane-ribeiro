@@ -16,10 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .swiper-pagination-bullet {
   background: #cccccc;
   opacity: 0.8;

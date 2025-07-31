@@ -6,6 +6,7 @@ import StartPage from "@/components/startpage";
 import Section from "@/components/layout/Section";
 import About from "@/components/about";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -33,6 +34,13 @@ export default function Home() {
           className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
         >
           <Projects />
+        </Section>
+
+        <Section
+          id="skills"
+          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
+        >
+          <Skills />
         </Section>
       </main>
       <ThemeToggle />

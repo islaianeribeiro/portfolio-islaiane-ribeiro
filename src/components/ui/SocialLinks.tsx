@@ -1,23 +1,18 @@
 import Link from "next/link";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const socialLinks = [
   {
     url: "https://www.instagram.com/_islaianeribeiro/#",
-    icon: <FontAwesomeIcon icon={faInstagram} />,
+    icon: <FaInstagram />,
   },
   {
     url: "https://www.linkedin.com/in/islaianeribeiro",
-    icon: <FontAwesomeIcon icon={faLinkedin} />,
+    icon: <FaLinkedin />,
   },
   {
     url: "https://github.com/islaianeribeiro",
-    icon: <FontAwesomeIcon icon={faGithub} />,
+    icon: <FaGithub />,
   },
 ];
 

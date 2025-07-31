@@ -5,16 +5,12 @@ import { useRef, ReactNode } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types"; // Importa tipo SwiperOptions
 import { Navigation, Pagination } from "swiper/modules";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "@/app/globals.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 interface CustomCarouselProps {
   children: ReactNode[];
@@ -55,7 +51,7 @@ const CustomCarousel = ({
           ref={prevRef}
           className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FaChevronLeft />
         </button>
       </div>
       <div className="absolute top-1/2 -translate-y-1/2 right-0 z-10">
@@ -63,7 +59,7 @@ const CustomCarousel = ({
           ref={nextRef}
           className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
         >
-          <FontAwesomeIcon icon={faChevronRight} />
+          <FaChevronRight />
         </button>
       </div>
 

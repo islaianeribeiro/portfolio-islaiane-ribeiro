@@ -9,7 +9,7 @@ export default function ThemeToggle() {
     <Button
       onClick={toggleTheme}
       text={isDark ? "Modo Claro" : "Modo Escuro"}
-      className="fixed top-0 right-0 z-[999] px-4 py-2 bg-accent text-white rounded-md"
+      className="fixed top-18.5 right-1 z-[999] px-4 py-2 bg-accent text-white rounded-md"
     />
   );
 }
