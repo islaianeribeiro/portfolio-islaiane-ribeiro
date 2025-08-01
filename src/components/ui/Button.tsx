@@ -8,6 +8,8 @@ type ButtonProps = {
   icon?: ReactNode;
   href?: string;
   ariaLabel?: string;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 };
 
 const Button = ({
@@ -18,6 +20,8 @@ const Button = ({
   icon,
   href,
   ariaLabel,
+  type = "button",
+  disabled = false,
 }: ButtonProps) => {
   const content = (
     <>
@@ -40,7 +44,13 @@ const Button = ({
   }
 
   return (
-    <button onClick={onClick} className={className} aria-label={ariaLabel}>
+    <button
+      onClick={onClick}
+      className={className}
+      aria-label={ariaLabel}
+      type={type}
+      disabled={disabled}
+    >
       {content}
     </button>
   );
