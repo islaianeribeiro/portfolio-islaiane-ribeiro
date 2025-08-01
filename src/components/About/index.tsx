@@ -19,8 +19,8 @@ export default function About() {
             height={300}
           />
         </div>
-        <div className="w-full md:w-1/2 pt-3">
-          <h2 className="text-2xl leading-10 font-bold">
+        <div className="w-full md:w-3/5 pt-3">
+          <h2 className="text-2xl md:text-3xl leading-10">
             MUITO PRAZER,{" "}
             <span className="text-accent block">SOU ISLAIANE RIBEIRO.</span>
           </h2>

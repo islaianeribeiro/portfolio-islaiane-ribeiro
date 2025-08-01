@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import Button from "@/components/ui/Button";
 import ClientNavBar from "./ClientNavBar";
@@ -20,6 +20,40 @@ export default function NavBar() {
 
   const handleMenuToggle = useCallback(() => {
     setOpenMenu((prev) => !prev);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = ["home", "about", "projects", "skills", "contact"];
+    const sectionElements = sectionIds.map((id) => document.getElementById(id));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSections = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio); // Prioriza a mais visível
+
+        if (visibleSections.length > 0) {
+          const id = visibleSections[0].target.id;
+          const index = sectionIds.indexOf(id);
+          setActiveIndex(index);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.6, // 60% visível
+      }
+    );
+
+    sectionElements.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      sectionElements.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
   }, []);
 
   return (

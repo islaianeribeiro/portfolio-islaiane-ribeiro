@@ -38,7 +38,7 @@ export default function ClientNavBar({
               className={`no-underline font-medium text-base block
                 ${
                   activeIndex === index
-                    ? "border-b md:border-light border-accent"
+                    ? "border-b md:text-white border-accent scale-[1.08] md:border-0"
                     : ""
                 }
                 ${

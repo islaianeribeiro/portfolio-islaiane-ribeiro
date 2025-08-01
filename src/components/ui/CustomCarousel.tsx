@@ -34,7 +34,7 @@ const CustomCarousel = ({
   return (
     <div className="relative w-full">
       {title && (
-        <h2 className="text-3xl uppercase text-center text-dark dark:text-light mb-6">
+        <h2 className="text-2xl md:text-3xl uppercase text-center text-dark dark:text-light mb-6">
           {typeof title === "string" ? (
             <>
               {title.split(" ").slice(0, -1).join(" ")}{" "}
