@@ -1,13 +1,35 @@
 // app/page.tsx
-import { ParticlesBackground } from "@/components/common";
+import { ParticlesBackground } from "@/components/common/ParticlesBackground";
 import NavBar from "@/components/navbar";
-import ThemeToggle from "@/components/ui/ThemeToggle";
 import StartPage from "@/components/startpage";
-import Section from "@/components/layout/Section";
+import { Section, Footer } from "@/components/layout";
 import About from "@/components/about";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Contact from "@/components/contact";
+
+const sections = [
+  {
+    id: "home",
+    component: <StartPage />,
+  },
+  {
+    id: "about",
+    component: <About />,
+  },
+  {
+    id: "projects",
+    component: <Projects />,
+  },
+  {
+    id: "skills",
+    component: <Skills />,
+  },
+  {
+    id: "contact",
+    component: <Contact />,
+  },
+];
 
 export default function Home() {
   return (
@@ -16,42 +38,17 @@ export default function Home() {
       <NavBar />
 
       <main className="mt-8">
-        <Section
-          id="home"
-          className="flex h-screen py-18 px-[10%] lg:px-[5%] items-center"
-        >
-          <StartPage />
-        </Section>
-
-        <Section
-          id="about"
-          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
-        >
-          <About />
-        </Section>
-
-        <Section
-          id="projects"
-          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
-        >
-          <Projects />
-        </Section>
-
-        <Section
-          id="skills"
-          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
-        >
-          <Skills />
-        </Section>
-
-        <Section
-          id="contact"
-          className="h-auto items-start px-[4%] py-18 lg:h-screen flex md:items-center justify-center scroll-mt-8"
-        >
-          <Contact />
-        </Section>
+        {sections.map(({ id, component }) => (
+          <Section
+            key={id}
+            id={id}
+            className="flex min-h-screen py-18 px-[10%] lg:px-[5%] items-center justify-center"
+          >
+            {component}
+          </Section>
+        ))}
       </main>
-      <ThemeToggle />
+      <Footer />
     </>
   );
 }

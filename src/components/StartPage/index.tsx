@@ -1,6 +1,5 @@
 import Image from "next/image";
-import SocialLinks from "../ui/SocialLinks";
-import Button from "../ui/Button";
+import { Button, SocialLinks } from "@/components/ui";
 
 export default function StartPage() {
   return (

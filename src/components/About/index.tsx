@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const paragrafos = [
-  "Olá! Me chamo Islaiane Ribeiro e sou Desenvolvedora Front-End, apaixonada por transformar ideias em interfaces interativas, acessíveis e de alto desempenho. Busco sempre criar experiências intuitivas e eficientes, combinando tecnologia e design. Tenho conhecimento em JavaScript, TypeScript, React.js, Next.js, HTML, CSS, TailwindCSS. Sou graduanda em Análise e Desenvolvimento de Sistemas (Unopar - conclusão em jun/2025).",
-  "Desenvolvo projetos pessoais e acadêmicos aplicando boas práticas como componentização, responsividade e otimização de performance. Também fui selecionada para a fase avançada do Bootcamp Skill+ Santander Open Academy, onde venho aprimorando conhecimentos em Python, DataViz, Inteligência Artificial Generativa e Data Storytelling, além de participar de mentorias e simulações de entrevistas técnicas.",
-  "Possuo habilidades em comunicação, resolução de problemas, auto-organização e aprendizado contínuo, adaptando-me rapidamente a novas tecnologias e desafios. Estou em busca da minha primeira oportunidade como desenvolvedora júnior! Caso tenha interesse em colaborar ou trocar experiências, fique à vontade para entrar em contato!",
+  "Olá! Sou Islaiane Ribeiro, Desenvolvedora Front-End formada em Análise e Desenvolvimento de Sistemas. Tenho experiência prática na criação de interfaces modernas, acessíveis e responsivas, com foco em oferecer uma boa experiência ao usuário final.",
+  "Possuo conhecimento sólido em HTML, CSS, JavaScript, TypeScript, React.js, Next.js e Tailwind CSS. Também tenho experiência com consumo de APIs REST, versionamento com Git/GitHub e aplicação de boas práticas de componentização, UI/UX e performance. Sou organizada, comunicativa, tenho facilidade em aprender novas tecnologias e tenho familiaridade com metodologias ágeis como Scrum.",
+  "Atualmente, estou em busca da minha primeira oportunidade como Desenvolvedora Front-End Júnior. Quero contribuir com soluções escaláveis e acessíveis, colaborar com o time e continuar evoluindo profissionalmente na área de tecnologia.",
 ];
 
 export default function About() {
@@ -12,7 +12,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-full text-dark dark:text-light">
         <div>
           <Image
-            className="w-70 h-70 md:w-90 md:h-90 object-contain rounded-full"
+            className="w-70 h-70 md:w-80 md:h-80 object-contain rounded-full"
             src="/images/avatar.png"
             alt="Descrição da imagem"
             width={300}

@@ -1,4 +1,4 @@
-import CustomCarousel from "../ui/CustomCarousel";
+import { CustomCarousel } from "@/components/ui";
 import ProjectCard from "./ProjectCard";
 import projects from "@/data/projects.json";
 

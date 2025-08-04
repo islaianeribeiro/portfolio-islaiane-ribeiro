@@ -1,9 +1,9 @@
 "use client";
-import emailjs from "@emailjs/browser";
+import { useEmail } from "@/hooks/useEmail";
 import { useState } from "react";
 import CustomInput from "./CustomInput";
 import CustomTextarea from "./CustomTextarea";
-import Button from "../ui/Button";
+import { Button } from "@/components/ui";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,50 +12,13 @@ export default function Contact() {
     message: "",
   });
 
-  const [statusMessage, setStatusMessage] = useState<{
-    type: "success" | "error" | null;
-    text: string;
-  }>({ type: null, text: "" });
-
-  const [isLoading, setIsLoading] = useState(false);
+  const { isLoading, statusMessage, sendEmail } = useEmail();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
-
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      )
-      .then(
-        (result) => {
-          console.log("Mensagem enviada com sucesso:", result.text);
-          setStatusMessage({
-            type: "success",
-            text: "Sua mensagem foi enviada com sucesso!",
-          });
-          setFormData({ name: "", email: "", message: "" });
-          setTimeout(() => setStatusMessage({ type: null, text: "" }), 5000);
-        },
-        (error) => {
-          console.error("Erro ao enviar a mensagem:", error.text);
-          setStatusMessage({
-            type: "error",
-            text: "Ocorreu um erro ao enviar sua mensagem. Tente novamente.",
-          });
-          setTimeout(() => setStatusMessage({ type: null, text: "" }), 5000);
-        }
-      )
-      .finally(() => {
-        setIsLoading(false);
-      });
+    sendEmail(formData).then(() => {
+      setFormData({ name: "", email: "", message: "" });
+    });
   };
 
   const handleChange = (

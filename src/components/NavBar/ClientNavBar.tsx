@@ -1,4 +1,5 @@
-import { useTheme } from "../../contexts/ThemeProvider";
+import { useTheme } from "@/contexts/ThemeProvider";
+import { ThemeToggle } from "@/components/ui";
 
 type MenuItem = {
   url: string;
@@ -23,7 +24,7 @@ export default function ClientNavBar({
   return (
     <nav
       id="navbar"
-      className={`fixed top-17 w-full p-4 transition-[right] duration-300 ease-in-out z-[999]
+      className={`fixed top-17 w-full p-4 transition-[right] duration-300 ease-in-out
         ${openMenu ? "right-0" : "right-[-100%]"} 
       ${
         isDark ? "bg-dark" : "bg-light"
@@ -31,7 +32,10 @@ export default function ClientNavBar({
     >
       <ul className="flex flex-col items-center md:flex-row">
         {menuItems.map((item, index) => (
-          <li className="p-1 md:inline-block md:py-0 md:px-5" key={index}>
+          <li
+            className="p-1 md:inline-block md:py-0 md:px-2.5 lg:px-4"
+            key={index}
+          >
             <a
               href={item.url}
               onClick={() => setActiveIndex(index)}
@@ -49,6 +53,9 @@ export default function ClientNavBar({
             </a>
           </li>
         ))}
+        <li className="p-1 md:inline-block md:py-0 md:pl-4">
+          <ThemeToggle />
+        </li>
       </ul>
     </nav>
   );

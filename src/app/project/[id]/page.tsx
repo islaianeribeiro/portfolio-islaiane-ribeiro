@@ -1,6 +1,5 @@
-import { ParticlesBackground } from "@/components/common";
-import Button from "@/components/ui/Button";
-import CustomCarousel from "@/components/ui/CustomCarousel";
+import { ParticlesBackground } from "@/components/common/ParticlesBackground";
+import { Button, CustomCarousel } from "@/components/ui";
 import projects from "@/data/projects.json";
 import Image from "next/image";
 import { FaArrowRightToBracket } from "react-icons/fa6";
@@ -33,6 +32,7 @@ export default async function ProjetoPage({ params }: Props) {
             <Button
               className="flex justify-center items-center p-2.5 bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
               href="/#projects"
+              ariaLabel="Voltar para a página anterior"
               icon={<FaArrowRightToBracket className="w-5 h-5 scale-x-[-1]" />}
             />
           </div>

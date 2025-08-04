@@ -32,7 +32,7 @@ const CustomCarousel = ({
   const nextRef = useRef(null);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full z-10">
       {title && (
         <h2 className="text-2xl md:text-3xl uppercase text-center text-dark dark:text-light mb-6">
           {typeof title === "string" ? (
@@ -50,6 +50,7 @@ const CustomCarousel = ({
         <button
           ref={prevRef}
           className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
+          aria-label="Retornar ao item anterior"
         >
           <FaChevronLeft />
         </button>
@@ -58,6 +59,7 @@ const CustomCarousel = ({
         <button
           ref={nextRef}
           className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
+          aria-label="Ir para o próximo item"
         >
           <FaChevronRight />
         </button>
