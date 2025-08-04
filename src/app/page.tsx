@@ -1,4 +1,3 @@
-// app/page.tsx
 import { ParticlesBackground } from "@/components/common/ParticlesBackground";
 import NavBar from "@/components/navbar";
 import StartPage from "@/components/startpage";

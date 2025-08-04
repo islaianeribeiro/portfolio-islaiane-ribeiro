@@ -30,7 +30,7 @@ export default function NavBar() {
       (entries) => {
         const visibleSections = entries
           .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio); // Prioriza a mais visível
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
         if (visibleSections.length > 0) {
           const id = visibleSections[0].target.id;
@@ -41,7 +41,7 @@ export default function NavBar() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.6, // 60% visível
+        threshold: 0.6,
       }
     );
 

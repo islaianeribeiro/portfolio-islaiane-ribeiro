@@ -9,10 +9,7 @@ interface Props {
 }
 
 export default async function ProjetoPage({ params }: Props) {
-  // Caso o 'params' seja uma Promise, espere ela:
-  const resolvedParams = await params;
-
-  const projeto = projects.find((p) => p.id === resolvedParams.id);
+  const projeto = projects.find((p) => p.id === params.id);
 
   if (!projeto) {
     return <div className="p-6">Projeto não encontrado.</div>;

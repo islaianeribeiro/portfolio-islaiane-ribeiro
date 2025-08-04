@@ -29,7 +29,7 @@ export const ParticlesBackground = () => {
         zIndex: -1,
       },
       background: {
-        color: isDark ? "#000000" : "#f4f4f4", // muda com o tema!
+        color: isDark ? "#000000" : "#f4f4f4",
       },
       particles: {
         number: {
@@ -72,7 +72,7 @@ export const ParticlesBackground = () => {
         },
       },
     }),
-    [isDark] // 👈 agora o fundo muda conforme o tema!
+    [isDark]
   );
 
   if (!init) return null;

@@ -17,7 +17,6 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDark, setIsDark] = useState(true);
 
-  // Atualiza a classe "dark" no <html>
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
