@@ -1,18 +1,22 @@
 import Link from "next/link";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { TfiEmail } from "react-icons/tfi";
 
 const socialLinks = [
   {
-    url: "https://www.instagram.com/_islaianeribeiro/#",
-    icon: <FaInstagram />,
+    url: "mailto:islaiane.lribeiro@gmail.com",
+    icon: <TfiEmail />,
+    ariaLabel: "Ícone de E-mail",
   },
   {
     url: "https://www.linkedin.com/in/islaianeribeiro",
     icon: <FaLinkedin />,
+    ariaLabel: "Ícone do LinkedIn",
   },
   {
     url: "https://github.com/islaianeribeiro",
     icon: <FaGithub />,
+    ariaLabel: "Ícone do GitHub",
   },
 ];
 
@@ -25,6 +29,7 @@ export default function SocialLinks() {
           href={item.url}
           target="_blank"
           className="inline-flex px-3 py-3 mx-2 my-4 text-lg font-semibold bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:-translate-y-1  hover:shadow-[0_0_0.8rem_#4b7c84]"
+          aria-label={item.ariaLabel}
         >
           {item.icon}
         </Link>

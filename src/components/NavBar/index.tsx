@@ -2,9 +2,9 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
-import { Button } from "@/components/ui";
+import { Button, ThemeToggle } from "@/components/ui";
 import ClientNavBar from "./ClientNavBar";
-import Link from "next/link";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const menuItems = [
   { url: "#home", label: "Início" },
@@ -59,18 +59,11 @@ export default function NavBar() {
   return (
     <header>
       <div className="flex items-center justify-around md:justify-evenly w-full h-17 fixed top-0 bg-accent z-100">
-        <div className="flex">
-          <Link href="/" className="no-underline">
-            <p className="text-xl text-white">Islaiane Ribeiro</p>
-          </Link>
+        <div className="flex items-center">
+          <p className="text-transparent bg-clip-text bg-light font-bold text-2xl ">
+            {`<Dev IR />`}
+          </p>
         </div>
-
-        <Button
-          className="block text-xl w-4 md:hidden text-light cursor-pointer"
-          onClick={handleMenuToggle}
-          ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
-          icon={openMenu ? <FaXmark /> : <FaBarsStaggered />}
-        />
 
         <ClientNavBar
           openMenu={openMenu}
@@ -78,6 +71,16 @@ export default function NavBar() {
           setActiveIndex={setActiveIndex}
           menuItems={menuItems}
         />
+
+        <div className="flex flex-row gap-4 justify-center items-center">
+          <ThemeToggle />
+          <Button
+            className="block text-xl w-4 md:hidden text-light cursor-pointer"
+            onClick={handleMenuToggle}
+            ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
+            icon={openMenu ? <FaXmark /> : <FaBarsStaggered />}
+          />
+        </div>
       </div>
     </header>
   );

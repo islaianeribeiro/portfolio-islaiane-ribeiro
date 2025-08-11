@@ -35,7 +35,11 @@ export default function Contact() {
       <h2 className="text-2xl md:text-3xl text-center text-dark dark:text-light mb-6">
         QUER ME <span className="text-accent">CONTATAR?</span>
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-full text-dark dark:text-light">
+      <div className="flex flex-col items-center justify-center gap-5 h-full text-dark dark:text-light">
+        <p className="text-base">
+          Aberta a oportunidades, parcerias e um bom bate-papo tech. Entre em
+          contato!
+        </p>
         <form
           className="mx-5 md:mx-auto text-center w-full"
           onSubmit={handleSubmit}

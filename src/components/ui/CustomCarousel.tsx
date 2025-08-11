@@ -8,8 +8,8 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "@/app/globals.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import "@/app/globals.css";
 
 interface CustomCarouselProps {
   children: ReactNode[];
