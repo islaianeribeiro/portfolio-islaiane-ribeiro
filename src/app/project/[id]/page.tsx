@@ -1,16 +1,19 @@
 import { ParticlesBackground } from "@/components/common/ParticlesBackground";
-import { Button, CustomCarousel } from "@/components/ui";
-import projects from "@/data/projects.json";
+import Button from "@/components/ui/Button";
+import CustomCarousel from "@/components/ui/CustomCarousel";
+import projects from "@/data/projects";
 import Image from "next/image";
 import { FaArrowRightToBracket } from "react-icons/fa6";
+import { use } from "react";
 
-interface Props {
-  params: { id: string };
-}
-
-export default async function ProjetoPage({ params }: Props) {
-  const projeto = projects.find((p) => p.id === params.id);
-
+export default function ProjetoPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = use(params);
+  // Converte o id do projeto para string antes de comparar
+  const projeto = projects.find((p) => String(p.id) === id);
   if (!projeto) {
     return <div className="p-6">Projeto não encontrado.</div>;
   }
@@ -29,8 +32,7 @@ export default async function ProjetoPage({ params }: Props) {
             <Button
               className="flex justify-center items-center p-2.5 bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
               href="/#projects"
-              ariaLabel="Voltar para a página anterior"
-              icon={<FaArrowRightToBracket className="w-5 h-5 scale-x-[-1]" />}
+              icon={<FaArrowRightToBracket className="scale-x-[-1]" />}
             />
           </div>
           <h1 className="text-xl md:text-2xl font-bold text-accent">
@@ -60,10 +62,10 @@ export default async function ProjetoPage({ params }: Props) {
 
           {secoes.map((secao, index) => (
             <div key={index}>
-              <h2 className="text-lg font-semibold md:text-xl text-accent mt-4 first:mt-0">
+              <h2 className="text-lg md:text-xl text-accent mt-4 first:mt-0">
                 {secao.titulo}
               </h2>
-              <ul className="list-disc ml-5 mb-2.5">
+              <ul className="list-disc ml-5">
                 {secao.itens.map((item, i) => (
                   <li className="text-sm md:text-base" key={i}>
                     {item}

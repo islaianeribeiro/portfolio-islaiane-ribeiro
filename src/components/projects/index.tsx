@@ -1,6 +1,6 @@
 import { CustomCarousel } from "@/components/ui";
 import ProjectCard from "./ProjectCard";
-import projects from "@/data/projects.json";
+import projects from "@/data/projects";
 
 export default function ProjectsSection() {
   return (

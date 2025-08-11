@@ -36,8 +36,14 @@ export function useEmail() {
         type: "success",
         text: "Sua mensagem foi enviada com sucesso!",
       });
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Erro ao enviar mensagem:", error);
+
+      // Opcional: checar se é um Error
+      if (error instanceof Error) {
+        console.error(error.message);
+      }
+
       setStatusMessage({
         type: "error",
         text: "Ocorreu um erro ao enviar sua mensagem. Tente novamente.",
