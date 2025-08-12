@@ -8,9 +8,9 @@ const paragrafos = [
 
 export default function About() {
   return (
-    <div className="px-2.5 h-full">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-full text-dark dark:text-light">
-        <div>
+    <div className="px-2.5" data-aos="fade-up">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12 h-full text-dark dark:text-light overflow-x-hidden">
+        <div data-aos="fade-right">
           <Image
             className="w-70 h-70 md:w-80 md:h-80 object-contain rounded-full"
             src="/images/avatar.png"
@@ -19,7 +19,7 @@ export default function About() {
             height={300}
           />
         </div>
-        <div className="w-full md:w-3/5 pt-3">
+        <div data-aos="fade-left" className="w-full md:w-3/5 pt-3">
           <h2 className="text-2xl md:text-3xl leading-10">
             MUITO PRAZER,{" "}
             <span className="text-accent block">SOU ISLAIANE RIBEIRO.</span>

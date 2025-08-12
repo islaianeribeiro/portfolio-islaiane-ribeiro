@@ -25,16 +25,16 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
       </h3>
       <p className="text-sm text-justify">{project.descricaoCurta}</p>
       <div className="project-links">
-        <a
+        <Link
           href={project.linkRepositorio}
           target="_blank"
-          className="inline-flex px-2 py-2 m-0.5 text-sm bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
+          className="inline-flex px-2 py-2 font-bold m-0.5 text-sm bg-accent-2 text-accent-3 border-0 rounded-md cursor-pointer no-underline hover:scale-105"
         >
           GitHub
-        </a>
+        </Link>
         <Link
           href={`/project/${project.id}`}
-          className="inline-flex px-2 py-2 m-1 text-sm bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
+          className="inline-flex px-2 py-2 font-bold m-1 text-sm bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-105 hover:text-white"
         >
           Ver mais
         </Link>

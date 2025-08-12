@@ -26,7 +26,7 @@ export default function ProjetoPage({
     <>
       <ParticlesBackground />
 
-      <div className="p-6 max-w-4xl mx-auto">
+      <div className="p-6 max-w-4xl mx-auto" data-aos="fade-up">
         <div className="flex items-center mb-4 gap-2.5">
           <div>
             <Button
@@ -62,7 +62,7 @@ export default function ProjetoPage({
 
           {secoes.map((secao, index) => (
             <div key={index}>
-              <h2 className="text-lg md:text-xl text-accent mt-4 first:mt-0">
+              <h2 className="text-lg md:text-xl text-accent mt-4">
                 {secao.titulo}
               </h2>
               <ul className="list-disc ml-5">

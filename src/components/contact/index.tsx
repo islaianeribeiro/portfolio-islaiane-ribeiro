@@ -31,8 +31,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full md:w-2/3 lg:w-1/2">
-      <h2 className="text-2xl md:text-3xl text-center text-dark dark:text-light mb-6">
+    <div className="w-full md:w-2/3 lg:w-1/2" data-aos="fade-up">
+      <h2 className="text-2xl font-semibold md:text-3xl text-center text-dark dark:text-light mb-6">
         QUER ME <span className="text-accent">CONTATAR?</span>
       </h2>
       <div className="flex flex-col items-center justify-center gap-5 h-full text-dark dark:text-light">

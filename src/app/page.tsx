@@ -33,7 +33,6 @@ const sections = [
 export default function Home() {
   return (
     <>
-      <ParticlesBackground />
       <NavBar />
 
       <main className="mt-8">
@@ -47,7 +46,9 @@ export default function Home() {
           </Section>
         ))}
       </main>
+
       <Footer />
+      <ParticlesBackground />
     </>
   );
 }

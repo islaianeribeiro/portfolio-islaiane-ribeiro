@@ -31,9 +31,9 @@ const CustomCarousel = ({
   const nextRef = useRef(null);
 
   return (
-    <div className="relative w-full z-10">
+    <div className="relative w-full z-10" data-aos="fade-up">
       {title && (
-        <h2 className="text-2xl md:text-3xl uppercase text-center text-dark dark:text-light mb-6">
+        <h2 className="text-2xl font-semibold md:text-3xl uppercase text-center text-dark dark:text-light mb-6">
           {typeof title === "string" ? (
             <>
               {title.split(" ").slice(0, -1).join(" ")}{" "}
@@ -48,7 +48,7 @@ const CustomCarousel = ({
       <div className="absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <button
           ref={prevRef}
-          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
+          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-accent-3 text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
           aria-label="Retornar ao item anterior"
         >
           <FaChevronLeft />
@@ -57,7 +57,7 @@ const CustomCarousel = ({
       <div className="absolute top-1/2 -translate-y-1/2 right-0 z-10">
         <button
           ref={nextRef}
-          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-[#327680] text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
+          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-accent-3 text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
           aria-label="Ir para o próximo item"
         >
           <FaChevronRight />

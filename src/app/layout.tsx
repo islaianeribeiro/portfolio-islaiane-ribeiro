@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-
-import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeProvider";
-
 import { Inter } from "next/font/google";
+import "./globals.css";
+import AOSInit from "@/components/aos/AOSInit";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={inter.className}>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <AOSInit />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

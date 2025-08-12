@@ -60,7 +60,7 @@ export default function NavBar() {
     <header>
       <div className="flex items-center justify-around md:justify-evenly w-full h-17 fixed top-0 bg-accent z-100">
         <div className="flex items-center">
-          <p className="text-transparent bg-clip-text bg-light font-bold text-2xl ">
+          <p className="text-transparent bg-clip-text bg-accent-2 font-bold text-2xl ">
             {`<Dev IR />`}
           </p>
         </div>
