@@ -4,18 +4,17 @@ import { useRef, ReactNode } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
 import { Navigation, Pagination } from "swiper/modules";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import "@/app/globals.css";
+import "./carousel.css";
 
 interface CustomCarouselProps {
   children: ReactNode[];
   slidesPerView?: number;
   breakpoints?: SwiperOptions["breakpoints"];
-  title?: string | ReactNode;
 }
 
 const CustomCarousel = ({
@@ -25,26 +24,12 @@ const CustomCarousel = ({
     768: { slidesPerView: 2 },
     1024: { slidesPerView: 3 },
   },
-  title,
 }: CustomCarouselProps) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
-    <div className="relative w-full z-10" data-aos="fade-up">
-      {title && (
-        <h2 className="text-2xl font-semibold md:text-3xl uppercase text-center text-dark dark:text-light mb-6">
-          {typeof title === "string" ? (
-            <>
-              {title.split(" ").slice(0, -1).join(" ")}{" "}
-              <span className="text-accent">{title.split(" ").slice(-1)}</span>
-            </>
-          ) : (
-            title
-          )}
-        </h2>
-      )}
-
+    <>
       <div className="absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <button
           ref={prevRef}
@@ -90,7 +75,7 @@ const CustomCarousel = ({
           <SwiperSlide key={index}>{child}</SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </>
   );
 };
 

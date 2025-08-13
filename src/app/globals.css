@@ -18,12 +18,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.swiper-pagination-bullet {
-  background: #cccccc;
-  opacity: 0.8;
-}
-
-.swiper-pagination-bullet-active {
-  background: #4b7c84;
-}
