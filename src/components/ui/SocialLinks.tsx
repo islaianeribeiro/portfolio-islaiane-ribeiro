@@ -6,17 +6,17 @@ const socialLinks = [
   {
     url: "mailto:islaiane.lribeiro@gmail.com",
     icon: <TfiEmail />,
-    ariaLabel: "Ícone de E-mail",
+    ariaLabel: "Enviar e-mail para Islaiane Ribeiro",
   },
   {
     url: "https://www.linkedin.com/in/islaianeribeiro",
     icon: <FaLinkedin />,
-    ariaLabel: "Ícone do LinkedIn",
+    ariaLabel: "Visitar perfil de Islaiane Ribeiro no LinkedIn",
   },
   {
     url: "https://github.com/islaianeribeiro",
     icon: <FaGithub />,
-    ariaLabel: "Ícone do GitHub",
+    ariaLabel: "Ver repositórios de Islaiane Ribeiro no GitHub",
   },
 ];
 

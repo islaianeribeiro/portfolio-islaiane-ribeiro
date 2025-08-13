@@ -10,7 +10,7 @@ export default function ThemeToggle() {
     <Button
       onClick={toggleTheme}
       icon={isDark ? <LuSun /> : <LuMoon />}
-      ariaLabel={isDark ? "Ícone de Sol" : "Ícone de Lua"}
+      ariaLabel={isDark ? "Ativar tema claro" : "Ativar tema escuro"}
       className="text-2xl text-light rounded-md"
     />
   );

@@ -33,6 +33,7 @@ export default function ProjetoPage({
               className="flex justify-center items-center p-2.5 bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
               href="/#projects"
               icon={<FaArrowRightToBracket className="scale-x-[-1]" />}
+              ariaLabel="Ir para seção de projetos"
             />
           </div>
           <h1 className="text-xl md:text-2xl font-bold text-accent">
@@ -40,21 +41,19 @@ export default function ProjetoPage({
           </h1>
         </div>
 
-        <div className="mb-5">
-          <div>
-            <CustomCarousel slidesPerView={1} breakpoints={{}}>
-              {projeto.imagens.map((item, index) => (
-                <Image
-                  className="rounded-2xl"
-                  key={index}
-                  src={item}
-                  alt={`Imagem do projeto ${projeto.nome}`}
-                  width={848}
-                  height={426}
-                />
-              ))}
-            </CustomCarousel>
-          </div>
+        <div className="relative w-full mb-4">
+          <CustomCarousel slidesPerView={1} breakpoints={{}}>
+            {projeto.imagens.map((item, index) => (
+              <Image
+                className="rounded-2xl"
+                key={index}
+                src={item}
+                alt={`Imagem do projeto ${projeto.nome}`}
+                width={848}
+                height={426}
+              />
+            ))}
+          </CustomCarousel>
         </div>
 
         <div className="text-black dark:text-light">

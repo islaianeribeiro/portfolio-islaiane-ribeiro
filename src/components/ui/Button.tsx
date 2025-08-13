@@ -23,6 +23,8 @@ const Button = ({
   type = "button",
   disabled = false,
 }: ButtonProps) => {
+  const accessibleLabel = text ? undefined : ariaLabel;
+
   const content = (
     <>
       {icon && <span>{icon}</span>}
@@ -36,7 +38,7 @@ const Button = ({
         href={href}
         target={target}
         className={className}
-        aria-label={ariaLabel}
+        aria-label={accessibleLabel}
       >
         {content}
       </a>
@@ -47,7 +49,7 @@ const Button = ({
     <button
       onClick={onClick}
       className={className}
-      aria-label={ariaLabel}
+      aria-label={accessibleLabel}
       type={type}
       disabled={disabled}
     >
