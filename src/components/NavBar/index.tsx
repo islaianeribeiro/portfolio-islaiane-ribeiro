@@ -4,7 +4,6 @@ import { useState, useCallback, useEffect } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { Button, ThemeToggle } from "@/components/ui";
 import ClientNavBar from "./ClientNavBar";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const menuItems = [
   { url: "#home", label: "Início" },
@@ -77,7 +76,7 @@ export default function NavBar() {
           <Button
             className="block text-xl w-4 md:hidden text-light cursor-pointer"
             onClick={handleMenuToggle}
-            ariaLabel={openMenu ? "Fechar menu" : "Abrir menu"}
+            ariaLabel={openMenu ? "Fechar o menu" : "Abrir o menu"}
             icon={openMenu ? <FaXmark /> : <FaBarsStaggered />}
           />
         </div>

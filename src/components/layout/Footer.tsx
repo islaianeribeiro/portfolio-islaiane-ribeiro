@@ -1,5 +1,4 @@
 import { SocialLinks } from "@/components/ui";
-import { BiHeart } from "react-icons/bi";
 
 const Footer = () => {
   return (
