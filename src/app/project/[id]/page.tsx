@@ -5,6 +5,7 @@ import projects from "@/data/projects";
 import Image from "next/image";
 import { FaArrowRightToBracket } from "react-icons/fa6";
 import { use } from "react";
+import { ThemeToggle } from "@/components/ui";
 
 export default function ProjetoPage({
   params,
@@ -26,19 +27,22 @@ export default function ProjetoPage({
     <>
       <ParticlesBackground />
 
-      <div className="p-6 max-w-4xl mx-auto" data-aos="fade-up">
-        <div className="flex items-center mb-4 gap-2.5">
-          <div>
-            <Button
-              className="flex justify-center items-center p-2.5 bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
-              href="/#projects"
-              icon={<FaArrowRightToBracket className="scale-x-[-1]" />}
-              ariaLabel="Ir para seção de projetos"
-            />
+      <div className="p-6 max-w-4xl mx-auto">
+        <div className="flex justify-between mb-4">
+          <div className="flex items-center gap-2.5">
+            <div>
+              <Button
+                className="flex justify-center items-center p-2.5 bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:text-accent-2"
+                href="/#projects"
+                icon={<FaArrowRightToBracket className="scale-x-[-1]" />}
+                ariaLabel="Ir para seção de projetos"
+              />
+            </div>
+            <h1 className="text-xl md:text-3xl font-bold text-accent">
+              {projeto.nome}
+            </h1>
           </div>
-          <h1 className="text-xl md:text-2xl font-bold text-accent">
-            {projeto.nome}
-          </h1>
+          <ThemeToggle />
         </div>
 
         <div className="relative w-full mb-4">
@@ -61,10 +65,10 @@ export default function ProjetoPage({
 
           {secoes.map((secao, index) => (
             <div key={index}>
-              <h2 className="text-lg md:text-xl text-accent mt-4">
+              <h2 className="text-lg text-accent md:text-xl font-semibold mt-4">
                 {secao.titulo}
               </h2>
-              <ul className="list-disc ml-5">
+              <ul className="list-disc list-inside ml-2 space-y-1">
                 {secao.itens.map((item, i) => (
                   <li className="text-sm md:text-base" key={i}>
                     {item}
@@ -77,7 +81,7 @@ export default function ProjetoPage({
           <p className="text-sm md:text-base my-4">{projeto.conclusao}</p>
 
           <Button
-            className="inline-flex px-2 py-2 m-1 text-sm bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:scale-102 hover:bg-white hover:text-accent"
+            className="inline-flex items-center gap-2 px-4 py-2 mt-2 text-sm font-medium bg-accent text-light rounded-md transition-all duration-300 hover:bg-white hover:text-accent hover:shadow-lg"
             href={projeto.linkRepositorio}
             text="Repositório do projeto"
             target="_blank"
