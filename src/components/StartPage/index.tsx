@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button, SocialLinks } from "@/components/ui";
+import TypingText from "./TypingText";
 
 export default function StartPage() {
   return (
@@ -12,10 +13,10 @@ export default function StartPage() {
           <h2 className="text-xl font-bold mb-1.5 uppercase lg:text-start text-accent">
             Islaiane Ribeiro
           </h2>
-          <p className="text-lg font-normal lg:text-end">
-            Desenvolvedora
-            <span className="text-accent font-bold"> Front-End</span>
-          </p>
+          <TypingText
+            text="Desenvolvedora Front-End apaixonada por tecnologia!"
+            speed={80}
+          />
 
           <div className="mt-25">
             <p className="text-center text-base md:text-lg">
