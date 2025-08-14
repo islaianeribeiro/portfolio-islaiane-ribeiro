@@ -14,7 +14,7 @@ export default function About() {
           <Image
             className="w-70 h-70 md:w-80 md:h-80 object-contain rounded-full"
             src="/images/avatar.png"
-            alt="Descrição da imagem"
+            alt="Avatar ilustrado representando Islaiane Ribeiro"
             width={300}
             height={300}
           />

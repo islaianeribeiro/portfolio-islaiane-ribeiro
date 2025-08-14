@@ -37,14 +37,17 @@ export default function StartPage() {
           </div>
         </div>
 
-        <div className="hidden lg:block" data-aos="zoom-in">
+        <div
+          className="shadow-multicolor-rotate rounded-[180px] hidden lg:block"
+          data-aos="zoom-in"
+        >
           <Image
             src="/images/perfil.png"
-            alt="Descrição da imagem"
+            alt="Foto de perfil de Islaiane Ribeiro"
             width={250}
             height={250}
             priority
-            className="w-90 h-90 object-contain bg-[#4b7c84] shadow-[0_0_0.8rem_#f4f4f4] rounded-full hover:-translate-y-1 hover:scale-105"
+            className="w-90 h-90 pt-2.5 bg-light dark:bg-dark rounded-full object-contain"
           />
         </div>
       </div>

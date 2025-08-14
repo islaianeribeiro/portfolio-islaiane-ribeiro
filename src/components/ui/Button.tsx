@@ -37,6 +37,7 @@ const Button = ({
       <a
         href={href}
         target={target}
+        rel="noopener noreferrer"
         className={className}
         aria-label={accessibleLabel}
       >

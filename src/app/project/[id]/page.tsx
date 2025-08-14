@@ -28,7 +28,7 @@ export default function ProjetoPage({
       <ParticlesBackground />
 
       <div className="p-6 max-w-4xl mx-auto">
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-2.5">
             <div>
               <Button

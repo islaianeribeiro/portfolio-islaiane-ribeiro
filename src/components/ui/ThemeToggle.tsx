@@ -11,7 +11,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       icon={isDark ? <LuSun /> : <LuMoon />}
       ariaLabel={isDark ? "Ativar tema claro" : "Ativar tema escuro"}
-      className="text-2xl p-1 bg-accent text-light rounded-md hover:text-accent-2 hover:scale-103"
+      className="text-2xl p-1 h-9 bg-accent text-light rounded-md hover:text-accent-2 hover:scale-103"
     />
   );
 }
