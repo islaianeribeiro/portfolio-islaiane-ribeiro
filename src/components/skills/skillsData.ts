@@ -12,13 +12,13 @@ import {
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiJest, SiMongodb, SiVite } from "react-icons/si";
 
-export interface Tecnologia {
+export interface SkillsDataProps {
   nome: string;
   icon: IconType;
   descricao: string;
 }
 
-export const tecnologias: Tecnologia[] = [
+export const skillsData: SkillsDataProps[] = [
   {
     nome: "HTML",
     icon: FaHtml5,

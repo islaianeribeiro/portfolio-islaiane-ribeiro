@@ -4,7 +4,7 @@ const projects = [
     nome: "APROARTI - Site Institucional",
     capa: "/images/aproarti/aproarti.png",
     descricaoCurta:
-      "Aplicação web para valorizar o artesanato de Icó - CE, inspirada na associação APROARTI. Desenvolvida com React.js, Next.js, TypeScript e Tailwind CSS, conta com seções como Home, Sobre, Produtos e Contato, unindo design artesanal e navegação acessível.",
+      "Aplicação web em React, Next.js e Tailwind CSS para promover o artesanato de Icó–CE, com design inspirado na cultura local e navegação acessível.",
     introducao:
       "Aplicação web inspirada na associação cultural APROARTI, desenvolvida para promover a arte e o artesanato local de Icó – CE. O projeto oferece uma presença digital moderna e acessível, valorizando os produtos, a história e o impacto cultural da associação.",
     funcionalidades: [
@@ -34,7 +34,7 @@ const projects = [
     nome: "Weather Forecast",
     capa: "/images/tempo/tempo.png",
     descricaoCurta:
-      "Aplicação web de previsão do tempo com dados da OpenWeather API. Desenvolvida com HTML, CSS e JavaScript (via Vite), possui interface responsiva, campo de busca por cidade, clima atual e previsão dos próximos dias com mensagens dinâmicas.",
+      "Aplicação em HTML, CSS e JavaScript (Vite) que exibe clima atual e previsão dos próximos dias via OpenWeather API, com layout responsivo e busca por cidade.",
     introducao:
       "Aplicação web interativa de previsão do tempo que consome dados da OpenWeather API, desenvolvida com foco em usabilidade, visual moderno e organização de código. Utiliza HTML, CSS e JavaScript (com Vite) e exibe informações meteorológicas em tempo real.",
     funcionalidades: [
@@ -66,7 +66,7 @@ const projects = [
     nome: "Pizzaria - Landing page",
     capa: "/images/pizzaria/pizzaria.png",
     descricaoCurta:
-      "Landing page moderna e responsiva para uma pizzaria fictícia, desenvolvida com Next.js, React.js e Tailwind CSS. Destaques para cardápio dinâmico via JSON, depoimentos interativos e foco em performance e UX.",
+      "Página moderna e responsiva em Next.js e Tailwind CSS com cardápio dinâmico, depoimentos interativos e foco em experiência do usuário.",
     introducao:
       "Landing page responsiva e moderna para uma pizzaria fictícia, desenvolvida com o objetivo de praticar habilidades em Next.js, React.js e Tailwind CSS. O foco do projeto foi oferecer uma experiência de usuário fluida e interativa, destacando o cardápio e avaliações de clientes.",
     funcionalidades: [
@@ -95,7 +95,7 @@ const projects = [
     nome: "Clone do Spotify",
     capa: "/images/spotify/spotify.png",
     descricaoCurta:
-      "Aplicação web de streaming de música inspirada no Spotify, com player funcional, rotas dinâmicas e consumo de API. Desenvolvida com React.js, Vite, Node.js, Express e MongoDB, unindo frontend moderno e backend estruturado.",
+      "Aplicação de streaming em React, Node.js e MongoDB com player funcional, rotas dinâmicas e consumo de API, integrando frontend e backend.",
     introducao:
       "Aplicação web de streaming de música inspirada no Spotify, desenvolvida com tecnologias modernas de frontend e backend. A plataforma oferece uma experiência intuitiva, com funcionalidades dinâmicas de reprodução e navegação entre artistas.",
     funcionalidades: [
@@ -126,7 +126,7 @@ const projects = [
     nome: "Lista de Tarefas",
     capa: "/images/lista/lista.png",
     descricaoCurta:
-      "Aplicação web de gerenciamento de tarefas com foco em manipulação do DOM e persistência de dados via localStorage. Desenvolvida com HTML, CSS e JavaScript, permite adicionar, concluir e excluir tarefas com feedback visual.",
+      "Aplicação em HTML, CSS e JavaScript para gerenciar tarefas, com persistência no localStorage e feedback visual interativo.",
     introducao:
       "Aplicação web interativa para gerenciamento de tarefas, desenvolvida com foco em praticar manipulação do DOM, persistência de dados e usabilidade. O projeto permite adicionar, concluir e excluir tarefas de forma simples e dinâmica.",
     funcionalidades: [

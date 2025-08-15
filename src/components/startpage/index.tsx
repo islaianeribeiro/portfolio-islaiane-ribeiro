@@ -38,7 +38,7 @@ export default function StartPage() {
         </div>
 
         <div
-          className="shadow-multicolor-rotate rounded-[180px] hidden lg:block"
+          className="shadow-multicolor-rotate rounded-[160px] hidden lg:block"
           data-aos="zoom-in"
         >
           <Image
@@ -47,7 +47,7 @@ export default function StartPage() {
             width={250}
             height={250}
             priority
-            className="w-90 h-90 pt-2.5 bg-light dark:bg-dark rounded-full object-contain"
+            className="w-80 h-80 pt-2.5 bg-light dark:bg-dark rounded-full object-contain"
           />
         </div>
       </div>

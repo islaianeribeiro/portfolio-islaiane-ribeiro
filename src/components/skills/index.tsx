@@ -1,4 +1,3 @@
-import { tecnologias } from "./skillsData";
 import SkillCard from "./SkillCard";
 
 export default function Skills() {
@@ -17,16 +16,7 @@ export default function Skills() {
         Toque nos cards para ver mais detalhes sobre cada tecnologia.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-dark dark:text-light">
-        {tecnologias.map((item, index) => (
-          <SkillCard
-            key={index}
-            nome={item.nome}
-            icon={item.icon}
-            descricao={item.descricao}
-          />
-        ))}
-      </div>
+      <SkillCard />
     </div>
   );
 }
