@@ -12,5 +12,5 @@ export default function AOSInit() {
     });
   }, []);
 
-  return null; // não renderiza nada visualmente
+  return null;
 }

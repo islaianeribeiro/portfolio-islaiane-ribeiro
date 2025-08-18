@@ -14,7 +14,7 @@ export default function TypingText({
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    setDisplayedText(""); // reset quando o texto mudar
+    setDisplayedText("");
   }, [text]);
 
   useEffect(() => {

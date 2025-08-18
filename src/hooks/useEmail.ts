@@ -39,7 +39,6 @@ export function useEmail() {
     } catch (error: unknown) {
       console.error("Erro ao enviar mensagem:", error);
 
-      // Opcional: checar se é um Error
       if (error instanceof Error) {
         console.error(error.message);
       }

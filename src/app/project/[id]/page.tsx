@@ -13,7 +13,7 @@ export default function ProjetoPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = use(params);
-  // Converte o id do projeto para string antes de comparar
+
   const projeto = projects.find((p) => String(p.id) === id);
   if (!projeto) {
     return <div className="p-6">Projeto não encontrado.</div>;

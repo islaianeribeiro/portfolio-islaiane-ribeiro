@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button, SocialLinks } from "@/components/ui";
 import TypingText from "./TypingText";
+import islaianePhoto from "@/assets/perfil.png";
 
 export default function StartPage() {
   return (
@@ -42,7 +43,7 @@ export default function StartPage() {
           data-aos="zoom-in"
         >
           <Image
-            src="/images/perfil.png"
+            src={islaianePhoto}
             alt="Foto de perfil de Islaiane Ribeiro"
             width={250}
             height={250}

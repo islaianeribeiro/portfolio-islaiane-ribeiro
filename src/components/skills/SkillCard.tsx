@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { skillsData } from "./skillsData"; // importando direto aqui
+import { skillsData } from "@/data/skillsData";
 
 export default function SkillCard() {
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);

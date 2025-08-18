@@ -1,4 +1,5 @@
 import Image from "next/image";
+import avatarIslaiane from "@/assets/avatar.png";
 
 const paragrafos = [
   "Olá! Sou Islaiane Ribeiro, Desenvolvedora Front-End formada em Análise e Desenvolvimento de Sistemas. Tenho experiência prática na criação de interfaces modernas, acessíveis e responsivas, com foco em oferecer uma boa experiência ao usuário final.",
@@ -13,7 +14,7 @@ export default function About() {
         <div data-aos="fade-right">
           <Image
             className="w-70 h-70 md:w-80 md:h-80 object-contain rounded-full"
-            src="/images/avatar.png"
+            src={avatarIslaiane}
             alt="Avatar ilustrado representando Islaiane Ribeiro"
             width={300}
             height={300}
