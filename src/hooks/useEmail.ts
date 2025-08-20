@@ -6,6 +6,11 @@ type StatusType = {
   text: string;
 };
 
+const isValidEmail = (email: string): boolean => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
 export function useEmail() {
   const [isLoading, setIsLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState<StatusType>({
@@ -18,6 +23,14 @@ export function useEmail() {
     email: string;
     message: string;
   }) => {
+    if (!isValidEmail(formData.email)) {
+      setStatusMessage({
+        type: "error",
+        text: "Por favor, insira um e-mail válido.",
+      });
+      return;
+    }
+
     setIsLoading(true);
 
     try {
@@ -38,10 +51,6 @@ export function useEmail() {
       });
     } catch (error: unknown) {
       console.error("Erro ao enviar mensagem:", error);
-
-      if (error instanceof Error) {
-        console.error(error.message);
-      }
 
       setStatusMessage({
         type: "error",
