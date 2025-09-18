@@ -22,16 +22,16 @@ export default function SkillCard() {
                 md:group-hover:[transform:rotateY(180deg)]`}
             >
               {/* Frente */}
-              <div className="absolute inset-0 bg-light dark:bg-dark border border-dark dark:border-light rounded-2xl shadow-lg flex flex-col justify-center items-center [backface-visibility:hidden]">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-2 to-light border border-accent-3/30 text-dark rounded-2xl shadow-lg flex flex-col justify-center items-center [backface-visibility:hidden]">
                 <skill.icon
                   className="w-9 h-9 text-accent"
                   aria-hidden="true"
                 />
-                <p className="text-sm">{skill.nome}</p>
+                <p className="mt-1.5 font-medium text-sm">{skill.nome}</p>
               </div>
 
               {/* Verso */}
-              <div className="absolute inset-0 bg-light dark:bg-dark border border-dark dark:border-light rounded-2xl shadow-inner flex flex-col justify-center items-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-2 to-light border border-accent-3/30 text-dark rounded-2xl shadow-inner flex flex-col justify-center items-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
                 <p className="text-xs text-center p-2">{skill.descricao}</p>
               </div>
             </div>

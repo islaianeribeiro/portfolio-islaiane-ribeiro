@@ -12,12 +12,12 @@ interface Project {
 
 const ProjectCard: FC<{ project: Project }> = ({ project }) => {
   return (
-    <div className="flex flex-col justify-evenly h-103 xl:h-100 bg-light dark:bg-dark border border-dark dark:border-light rounded-[1.2rem] p-4 text-dark dark:text-light text-center hover:shadow-[0_0_1.5rem_#4b7c84]">
+    <div className="flex flex-col justify-evenly h-103 xl:h-100 bg-gradient-to-br from-accent-2 to-light border border-accent-3/30 rounded-[1.2rem] p-3 text-dark text-center hover:shadow-[0_0_1.5rem_#4b7c84]">
       <div className="h-48">
         <Image
           src={project.capa}
           alt={`Imagem do projeto ${project.nome}`}
-          className="w-full h-45 object-cover object-center rounded-md mb-2 border border-dark dark:border-light"
+          className="w-full h-45 object-cover object-center rounded-md mb-2 border border-accent-3/30"
           width={200}
           height={200}
         />
@@ -26,7 +26,7 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
       <h3 className="text-base md:text-xl font-semibold text-accent">
         {project.nome}
       </h3>
-      <p className="text-sm text-justify">{project.descricaoCurta}</p>
+      <p className="text-base text-justify">{project.descricaoCurta}</p>
       <div className="project-links">
         <Link
           href={project.linkRepositorio}

@@ -36,7 +36,7 @@ export default function Contact() {
         QUER ME <span className="text-accent">CONTATAR?</span>
       </h2>
       <div className="flex flex-col items-center justify-center gap-5 h-full text-dark dark:text-light">
-        <p className="text-base">
+        <p className="text-center text-base">
           Aberta a oportunidades, parcerias e um bom bate-papo tech. Entre em
           contato!
         </p>

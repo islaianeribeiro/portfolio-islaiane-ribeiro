@@ -8,6 +8,7 @@ import ClientNavBar from "./ClientNavBar";
 const menuItems = [
   { url: "#home", label: "Início" },
   { url: "#about", label: "Sobre" },
+  { url: "#services", label: "Serviços" },
   { url: "#projects", label: "Projetos" },
   { url: "#skills", label: "Habilidades" },
   { url: "#contact", label: "Contato" },
@@ -22,7 +23,14 @@ export default function NavBar() {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ["home", "about", "projects", "skills", "contact"];
+    const sectionIds = [
+      "home",
+      "about",
+      "services",
+      "projects",
+      "skills",
+      "contact",
+    ];
     const sectionElements = sectionIds.map((id) => document.getElementById(id));
 
     const observer = new IntersectionObserver(
@@ -40,7 +48,7 @@ export default function NavBar() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.6,
+        threshold: 0.5,
       }
     );
 

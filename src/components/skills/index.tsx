@@ -7,12 +7,12 @@ export default function Skills() {
         MINHAS <span className="text-accent">HABILIDADES.</span>
       </h2>
 
-      <p className="hidden sm:block text-center text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <p className="hidden sm:block text-center text-gray-500 dark:text-gray-400 mb-6">
         Passe o mouse sobre os cards para ver mais detalhes sobre cada
         tecnologia.
       </p>
 
-      <p className="block sm:hidden text-center text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <p className="block sm:hidden text-center text-gray-500 dark:text-gray-400 mb-6">
         Toque nos cards para ver mais detalhes sobre cada tecnologia.
       </p>
 
