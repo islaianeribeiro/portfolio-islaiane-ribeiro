@@ -81,7 +81,7 @@ export default function ProjetoPage({
           <p className="text-sm md:text-base my-4">{projeto.conclusao}</p>
 
           <Button
-            className="inline-flex items-center gap-2 px-4 py-2 mt-2 text-sm font-medium bg-accent text-light rounded-md transition-all duration-300 hover:bg-white hover:text-accent hover:shadow-lg"
+            className="inline-flex items-center gap-2 px-4 py-2 mt-2 text-sm font-medium bg-accent-2 text-accent-3 rounded-md transition-all duration-300 hover:bg-accent hover:text-light hover:shadow-lg"
             href={projeto.linkRepositorio}
             text="Repositório do projeto"
             target="_blank"
