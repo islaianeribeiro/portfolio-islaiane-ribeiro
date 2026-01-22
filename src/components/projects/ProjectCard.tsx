@@ -6,7 +6,7 @@ interface Project {
   id: string;
   nome: string;
   descricaoCurta: string;
-  imagens: string;
+  imagens: string[];
   linkRepositorio: string;
   linkDeploy: string;
 }
