@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="flex flex-col justify-center items-center gap-4">
         <p className="text-2xl text-accent font-semibold">Islaiane Ribeiro</p>
         <p className="text-base">
-          Desenvolvedora Front-end apaixonada por criar soluções digitais.
-          Tecnologia e inovação movem meu trabalho e meu aprendizado constante.
+          Desenvolvedora Front-End com foco em React, Next.js e interfaces
+          modernas e responsivas.
         </p>
         <SocialLinks />
       </div>
@@ -17,7 +17,7 @@ const Footer = () => {
           ©2025 Islaiane Ribeiro. Todos os direitos reservados.
         </p>
         <p className="text-sm flex gap-1 items-center">
-          Feito com ❤️ e um toque de café ☕
+          Feito com ❤️ e um toque de ☕
         </p>
       </div>
     </footer>

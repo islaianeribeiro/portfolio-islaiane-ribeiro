@@ -27,7 +27,7 @@ export default function ServiceCard({
         {title}
       </h3>
 
-      <p className="text-center text-base text-dark">{description}</p>
+      <p className="text-justify text-base text-dark">{description}</p>
     </div>
   );
 }

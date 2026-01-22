@@ -7,25 +7,25 @@ const services = [
     icon: <FiSmartphone className="text-2xl text-light" />,
     title: "Landing Pages",
     description:
-      "Desenvolvimento de páginas modernas, rápidas e adaptadas a qualquer dispositivo, com foco em performance e conversão de visitantes em clientes.",
+      "Desenvolvimento de páginas modernas e responsivas, adaptadas a diferentes dispositivos, com foco em performance, usabilidade e boa apresentação visual.",
   },
   {
     icon: <FaGlobe className="text-2xl text-light" />,
     title: "Portfólios e Sites Pessoais",
     description:
-      "Criação de sites exclusivos e personalizados para destacar sua marca pessoal ou profissional, transmitindo credibilidade e identidade visual.",
+      "Criação de sites personalizados para profissionais e marcas pessoais, com layouts organizados, identidade visual consistente e foco em credibilidade.",
   },
   {
     icon: <FaBolt className="text-2xl text-light" />,
     title: "Aplicações Interativas",
     description:
-      "Construção de aplicações web dinâmicas e funcionais com JavaScript, React e Next.js, entregando experiências envolventes e intuitivas para o usuário.",
+      "Construção de aplicações web dinâmicas utilizando JavaScript, React e Next.js, priorizando interatividade, organização de código e boa experiência do usuário.",
   },
   {
     icon: <FiTool className="text-2xl text-light" />,
     title: "Otimização de Sites",
     description:
-      "Melhoria de sites existentes com foco em desempenho, acessibilidade e SEO, garantindo carregamento rápido e melhor experiência para o usuário.",
+      "Aprimoramento de sites existentes com foco em desempenho, acessibilidade e SEO, buscando melhorar carregamento, usabilidade e estrutura.",
   },
 ];
 
@@ -36,8 +36,9 @@ export default function Services() {
         Meus <span className="text-accent">Serviços</span>
       </h2>
       <p className="text-gray-500 dark:text-gray-400 mb-6">
-        Ajudo empresas e profissionais a transformarem ideias em experiências
-        digitais modernas e funcionais.
+        Desenvolvo soluções digitais focadas em interfaces modernas, funcionais
+        e responsivas, aplicando boas práticas de front-end e experiência do
+        usuário.
       </p>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">

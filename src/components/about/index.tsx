@@ -2,9 +2,9 @@ import Image from "next/image";
 import avatarIslaiane from "@/assets/avatar.png";
 
 const paragrafos = [
-  "Olá! Sou Islaiane Ribeiro, Desenvolvedora Front-End formada em Análise e Desenvolvimento de Sistemas. Tenho experiência prática na criação de interfaces modernas, acessíveis e responsivas, com foco em oferecer uma boa experiência ao usuário final.",
-  "Possuo conhecimento sólido em HTML, CSS, JavaScript, TypeScript, React.js, Next.js e Tailwind CSS. Também tenho experiência com consumo de APIs REST, versionamento com Git/GitHub e aplicação de boas práticas de componentização, UI/UX e performance. Sou organizada, comunicativa, tenho facilidade em aprender novas tecnologias e tenho familiaridade com metodologias ágeis como Scrum.",
-  "Atualmente, estou em busca da minha primeira oportunidade como Desenvolvedora Front-End Júnior. Quero contribuir com soluções escaláveis e acessíveis, colaborar com o time e continuar evoluindo profissionalmente na área de tecnologia.",
+  "Sou Desenvolvedora Front-End formada em Análise e Desenvolvimento de Sistemas, com foco na criação de interfaces modernas, acessíveis e responsivas, sempre buscando oferecer uma boa experiência ao usuário.",
+  "Tenho experiência prática com HTML, CSS, JavaScript, TypeScript, React.js, Next.js e Tailwind CSS, além de consumo de APIs REST, versionamento com Git/GitHub e aplicação de boas práticas de componentização, UI/UX e performance. Também possuo familiaridade com metodologias ágeis, como Scrum.",
+  "Atualmente, busco minha primeira oportunidade como Desenvolvedora Front-End Júnior, onde eu possa contribuir com soluções acessíveis e escaláveis, colaborar com o time e continuar evoluindo profissionalmente na área de tecnologia.",
 ];
 
 export default function About() {

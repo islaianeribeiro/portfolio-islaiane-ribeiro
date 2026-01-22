@@ -34,7 +34,7 @@ export default function TypingText({
   }, [displayedText, text, speed]);
 
   return (
-    <p className="text-base md:text-lg font-normal lg:text-end">
+    <p className="text-base md:text-lg font-medium">
       {displayedText}
       <span className="cursor text-accent">|</span>
     </p>

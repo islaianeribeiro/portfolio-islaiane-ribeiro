@@ -45,7 +45,7 @@ export default function Home() {
           <Section
             key={id}
             id={id}
-            className="flex min-h-screen py-18 px-[5%] lg:px-[8%] items-center justify-center"
+            className="flex min-h-screen py-18 px-[5%] lg:px-[2%] xl:px-[6%] items-center justify-center"
           >
             {component}
           </Section>

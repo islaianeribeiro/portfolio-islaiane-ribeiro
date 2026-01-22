@@ -29,7 +29,7 @@ export const ParticlesBackground = () => {
         zIndex: -1,
       },
       background: {
-        color: isDark ? "#000000" : "#f4f4f4",
+        color: isDark ? "#0a0a0a" : "#f4f4f4",
       },
       particles: {
         number: {

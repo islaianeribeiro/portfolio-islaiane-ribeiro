@@ -8,6 +8,10 @@ export default function ProjectsSection() {
       <h2 className="text-2xl font-semibold md:text-3xl uppercase text-center text-dark dark:text-light mb-6">
         Meus <span className="text-accent">Projetos</span>
       </h2>
+      <p className="text-gray-500 dark:text-gray-400 text-center text-base mb-6">
+        Projetos desenvolvidos com foco em boas práticas, organização de código
+        e experiência do usuário.
+      </p>
 
       <CustomCarousel
         slidesPerView={1}
