@@ -2,9 +2,9 @@ import Image from "next/image";
 import avatarIslaiane from "@/assets/avatar.png";
 
 const paragrafos = [
-  "Sou Desenvolvedora Front-End formada em Análise e Desenvolvimento de Sistemas, com foco na criação de interfaces modernas, acessíveis e responsivas, sempre buscando oferecer uma boa experiência ao usuário.",
-  "Tenho experiência prática com HTML, CSS, JavaScript, TypeScript, React.js, Next.js e Tailwind CSS, além de consumo de APIs REST, versionamento com Git/GitHub e aplicação de boas práticas de componentização, UI/UX e performance. Também possuo familiaridade com metodologias ágeis, como Scrum.",
-  "Atualmente, busco minha primeira oportunidade como Desenvolvedora Front-End Júnior, onde eu possa contribuir com soluções acessíveis e escaláveis, colaborar com o time e continuar evoluindo profissionalmente na área de tecnologia.",
+  "Sou Desenvolvedora Front-End formada em Análise e Desenvolvimento de Sistemas, com foco na criação de interfaces modernas, acessíveis e responsivas, sempre priorizando a clareza e a experiência do usuário.",
+  "Tenho experiência prática com React, Next.js, JavaScript e TypeScript, além de desenvolvimento de interfaces integradas a APIs, versionamento com Git e aplicação de boas práticas de componentização, performance e UI/UX.",
+  "Estou disponível para projetos freelance, desenvolvendo soluções digitais sob medida, e também em busca de uma oportunidade como Desenvolvedora Front-End Júnior, onde eu possa contribuir com o time e continuar evoluindo profissionalmente.",
 ];
 
 export default function About() {

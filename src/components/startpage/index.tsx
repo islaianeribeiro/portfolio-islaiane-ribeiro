@@ -13,14 +13,13 @@ export default function StartPage() {
           </h1>
           <TypingText text="Desenvolvedora Front-End!" speed={80} />
           <p className="text-sm md:text-base max-w-xl mx-auto">
-            Desenvolvo interfaces modernas, responsivas e acessíveis com React,
-            Next.js e JavaScript.
+            Crio sites e interfaces modernas adaptadas à sua necessidade.
           </p>
 
           <div className="mt-20">
             <p className="text-sm md:text-base max-w-xl mx-auto">
-              Sou formada em Análise e Desenvolvimento de Sistemas e busco minha
-              primeira oportunidade como desenvolvedora front-end júnior.
+              Disponível para projetos freelance e oportunidades como
+              desenvolvedora front-end júnior.
             </p>
           </div>
 
@@ -30,7 +29,7 @@ export default function StartPage() {
             <Button
               href="/cv/Curriculo-Islaiane-Ribeiro-2026.pdf"
               text="Currículo"
-              className="inline-flex px-3 py-2 m-0.5 text-sm font-bold bg-accent-2 text-accent-3 border-0 rounded-md cursor-pointer no-underline hover:-translate-y-1 hover:shadow-[0_0_0.8rem_#4b7c84]"
+              className="inline-flex px-3 py-2 m-0.5 text-sm font-bold bg-accent-2 text-accent-3 border border-accent-3 rounded-md cursor-pointer no-underline hover:-translate-y-1 hover:shadow-[0_0_0.8rem_#b598c7]"
               target="_blank"
             />
           </div>
@@ -46,7 +45,7 @@ export default function StartPage() {
             width={250}
             height={250}
             priority
-            className="w-80 h-80 pt-2.5 bg-light dark:bg-dark rounded-full object-contain"
+            className="w-80 h-80 pt-2.5 bg-light rounded-full object-contain"
           />
         </div>
       </div>

@@ -29,7 +29,7 @@ export const ParticlesBackground = () => {
         zIndex: -1,
       },
       background: {
-        color: isDark ? "#0a0a0a" : "#f4f4f4",
+        color: isDark ? "#211f1f" : "#f4f1f7",
       },
       particles: {
         number: {
@@ -40,7 +40,7 @@ export const ParticlesBackground = () => {
           },
         },
         color: {
-          value: "#4b7c84",
+          value: "#9c7dac",
         },
         shape: {
           type: "circle",
@@ -57,7 +57,7 @@ export const ParticlesBackground = () => {
         },
         links: {
           enable: true,
-          color: "#4b7c84",
+          color: "#9c7dac",
           distance: 150,
           opacity: 0.6,
           width: 1,
@@ -72,7 +72,7 @@ export const ParticlesBackground = () => {
         },
       },
     }),
-    [isDark]
+    [isDark],
   );
 
   if (!init) return null;

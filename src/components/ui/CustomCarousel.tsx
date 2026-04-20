@@ -44,7 +44,7 @@ const CustomCarousel = ({
       <div className="absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <button
           onClick={goPrev}
-          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-accent-3 text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
+          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent-3 hover:bg-accent text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
           aria-label="Retornar ao item anterior"
         >
           <FaChevronLeft />
@@ -53,7 +53,7 @@ const CustomCarousel = ({
       <div className="absolute top-1/2 -translate-y-1/2 right-0 z-10">
         <button
           onClick={goNext}
-          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent hover:bg-accent-3 text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
+          className="flex justify-center px-2 py-2 w-8 h-8 bg-accent-3 hover:bg-accent text-light border-0 rounded-full cursor-pointer no-underline hover:scale-102"
           aria-label="Ir para o próximo item"
         >
           <FaChevronRight />

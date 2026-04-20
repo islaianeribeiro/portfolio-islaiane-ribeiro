@@ -4,28 +4,28 @@ import ServiceCard from "./ServiceCard";
 
 const services = [
   {
-    icon: <FiSmartphone className="text-2xl text-light" />,
-    title: "Landing Pages",
-    description:
-      "Desenvolvimento de páginas modernas e responsivas, adaptadas a diferentes dispositivos, com foco em performance, usabilidade e boa apresentação visual.",
-  },
-  {
     icon: <FaGlobe className="text-2xl text-light" />,
-    title: "Portfólios e Sites Pessoais",
+    title: "Sites e Landing Pages",
     description:
-      "Criação de sites personalizados para profissionais e marcas pessoais, com layouts organizados, identidade visual consistente e foco em credibilidade.",
+      "Desenvolvimento de sites profissionais e páginas de vendas, com design responsivo, boa performance e foco em apresentar seu negócio com clareza.",
   },
   {
-    icon: <FaBolt className="text-2xl text-light" />,
-    title: "Aplicações Interativas",
+    icon: <FiSmartphone className="text-2xl text-light" />,
+    title: "Links na Bio Personalizados",
     description:
-      "Construção de aplicações web dinâmicas utilizando JavaScript, React e Next.js, priorizando interatividade, organização de código e boa experiência do usuário.",
+      "Criação de páginas personalizadas para reunir seus links em um só lugar, com identidade visual e sem mensalidade.",
   },
   {
     icon: <FiTool className="text-2xl text-light" />,
-    title: "Otimização de Sites",
+    title: "Otimização e Atualizações",
     description:
-      "Aprimoramento de sites existentes com foco em desempenho, acessibilidade e SEO, buscando melhorar carregamento, usabilidade e estrutura.",
+      "Melhorias em sites existentes, ajustes de performance, organização e suporte contínuo para manter tudo funcionando bem.",
+  },
+  {
+    icon: <FaBolt className="text-2xl text-light" />,
+    title: "Soluções Personalizadas",
+    description:
+      "Desenvolvimento de soluções sob medida para necessidades específicas, desde páginas simples até aplicações interativas.",
   },
 ];
 
@@ -36,12 +36,11 @@ export default function Services() {
         Meus <span className="text-accent">Serviços</span>
       </h2>
       <p className="text-gray-500 dark:text-gray-400 mb-6">
-        Desenvolvo soluções digitais focadas em interfaces modernas, funcionais
-        e responsivas, aplicando boas práticas de front-end e experiência do
-        usuário.
+        Desenvolvo soluções digitais com foco em interfaces modernas, funcionais
+        e responsivas, unindo boa experiência do usuário e organização.
       </p>
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {services.map((service, index) => (
           <ServiceCard
             key={index}

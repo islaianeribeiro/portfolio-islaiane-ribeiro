@@ -28,7 +28,7 @@ export default function SocialLinks() {
           key={index}
           href={item.url}
           target="_blank"
-          className="inline-flex px-3 py-3 mx-2 my-4 text-lg font-semibold bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:-translate-y-1  hover:shadow-[0_0_0.8rem_#4b7c84]"
+          className="inline-flex px-3 py-3 mx-2 my-4 text-lg font-semibold bg-accent text-light border-0 rounded-md cursor-pointer no-underline hover:-translate-y-1  hover:shadow-[0_0_0.8rem_#b598c7]"
           aria-label={item.ariaLabel}
         >
           {item.icon}
